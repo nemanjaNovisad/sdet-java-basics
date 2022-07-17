@@ -12,7 +12,7 @@ public class IteratorDemo1 {
         words.add("Play");
         words.add("Come");
         words.add("Frame");
-        words.add("game");
+        words.add("Game");
 
         words.removeIf( nat -> nat.endsWith("e"));
        // System.out.println(words);
