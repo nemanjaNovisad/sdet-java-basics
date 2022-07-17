@@ -3,29 +3,23 @@ package com.syntax.class13;
 public class StringDemo2 {
 
 	public static void main(String[] args) {
-	
-String str="457Anh%#$%fregb346kren&%$^^&*JBD33";
+		// TODO Auto-generated method stub
+
+		String str="sfkafdb18247t8725KSNDKASD!@#$((%^^";
 		
-		System.out.println(str.replaceAll("[0-9]", "#")); // replace all numbers by #
+		System.out.println(str.replaceAll("[0-9]", "#")); //sfkafdb#####t####KSNDKASD!@#$((%^^
+		System.out.println(str.replaceAll("[a-z]", "#")); //#######18247#8725KSNDKASD!@#$((%^^
+		System.out.println(str.replaceAll("[A-Z]", "#")); //sfkafdb18247t8725########!@#$((%^^
+		System.out.println(str.replaceAll("[A-Za-z]", "#")); //#######18247#8725########!@#$((%^^
+		System.out.println(str.replaceAll("[A-Za-z0-9]", "#")); //#########################!@#$((%^^
+		System.out.println(str.replaceAll("[^a-z]", "_")); //sfkafdb_____t_____________________
 		
-		System.out.println(str.replaceAll("[a-z]", "#")); // replace all lowercase by #
-		
-		System.out.println(str.replaceAll("[A-Z]", "#")); // replace all uppercase by #
-		
-		
-		System.out.println(str.replaceAll("[A-Za-z0-9]", "#")); //replace all letters and numbers
-		
-		System.out.println(str.replaceAll("[^a-z]", "_")); // replace all except lowercase letters
-		
-		System.out.println(str.replaceAll("[^A-Z]", "*")); // replace all except uppercase letters
-		System.out.println(str.replaceAll("[^A-Za-z0-9]", "_")); // replace all special characters
-	String	str2="abfccdegtrewfghihjklmnoyxpqr";
-		
-		System.out.println(str2.replace("[a-f]", "*")); // replace the range a to f
-		
-		
-		
-		
+		System.out.println(str.replaceAll("[^A-Z]", "*")); //*****************KSNDKASD*********
+		System.out.println(str.replaceAll("[^A-Za-z0-9]", "*"));//sfkafdb18247t8725KSNDKASD*********
+		str="abcdefghijkl";
+		System.out.println(str.replaceAll("[a-f]", "*"));
+		str="sfkafdb18247t8725KSNDKASD!@#$((%^^";
+		System.out.println(str.replaceAll("[^A-z]", "")); //remove the special characters
 	}
 
 }

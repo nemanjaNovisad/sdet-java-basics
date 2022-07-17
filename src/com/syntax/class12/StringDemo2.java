@@ -4,23 +4,21 @@ public class StringDemo2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		String str = "Batch 13 is Great";
-		System.out.println(str.startsWith("Batch")); //returns booleans
-		System.out.println(str.endsWith ("great")); 
-		System.out.println(str.toLowerCase().endsWith("great"));
-		
-		
-		String name = "NEMANJA";
-		System.out.println(name.toLowerCase());
-		System.out.println(name);
-		
-		String query = "13";
-		System.out.println(str.contains(query));
-		System.out.println(str.contains("is"));
-		System.out.println(str.toLowerCase().contains("batch"));
-		
 
+		String firstName="Adem";
+		String lastName=" jones";
+		String fullName= firstName+lastName; // always always prefer this
+		String fullName2=firstName.concat(lastName); // never use this because it can lead you to nullpointer exception
+		System.out.println(fullName2);
+		System.out.println(fullName);
+		
+		String name=" ";
+		System.out.println(name.isEmpty());
+		//System.out.println(name.isBlank());
+		
+		String captainAmerica=" ne   ver ";
+		System.out.println(captainAmerica.trim());
+		
 	}
 
 }

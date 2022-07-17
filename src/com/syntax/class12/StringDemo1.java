@@ -5,32 +5,25 @@ public class StringDemo1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-//		String name = new String("Nemanja");
-//		String name2 = "Nemanja";
-//		
-//		//all classes in java can be treated as data types
-//		//if a class is present inside the same package or if a class belongs to java.lan package
-//		
-//		System.out.println(name.length());
+		String name= new String("Oleg"); //proper way of creating an object from a class
 		
+		String name2="Oleg";  // its same as String name= new String("Oleg");
+		// All the classes in java can be treated as data types
+		//if a class is present insdie the same package or if a class belongs to java.lan package
 		
+		System.out.println(name.length());
+		name2=" Z ameer ";
+		System.out.println(name2.length());
 		
+		String name3="Oleg";
+		System.out.println(name3.length());
 		
-		String firstName = "Adem";
-		String lastName = " Jones";
-		String fullName = firstName + lastName; //always always prefer this
-		String fullName2 = firstName.concat(lastName); //never use this because it can lead you to nullpointer exception
+		//Break till 11:50
 		
-		System.out.println(fullName2);
-		System.out.println(fullName);
-		
-		String name = "";
-		System.out.println(name.isEmpty());
-		//System.out.println(name.isBlank()); //it doesn't work in older version of eclipse
-		
-		String str = " never ";
-		System.out.println(str.trim()); //it removes spaces only before and after 'never'
-		
+		String captain="NAVEED";
+		System.out.println(captain.toLowerCase());
+		captain="I love Java";
+		System.out.println(captain.toUpperCase());
 		
 	}
 
